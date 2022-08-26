@@ -1,3 +1,5 @@
 {
-    "rootDir": "src"
+    "rootDir": "src",
+    "stagingFolderPath": "dist",
+    "emitDefinitions": true
 }
