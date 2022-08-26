@@ -5,6 +5,7 @@ sub Main()
     lowLibObj = new lowlib.LowLib({ "a": "the answer is: ", "b": 42 })
     hilibObj = new hiLib.HiLib(lowLibObj)
     msg = hilibObj.doThat()
+    print "msg:_|" msg "|_"
 
     screen = CreateObject("roSGScreen")
     m.port = CreateObject("roMessagePort")
