@@ -1,7 +1,11 @@
 import "pkg:/source/roku_modules/hilib/hilib.brs"
-
+import "pkg:/source/roku_modules/lowlib/lowlib.brs"
 
 sub Main()
+    lowLibObj = new lowlib.LowLib({ "a": "the answer is: ", "b": 42 })
+    hilibObj = new hiLib.HiLib(lowLibObj)
+    msg = hilibObj.doThat()
+
     screen = CreateObject("roSGScreen")
     m.port = CreateObject("roMessagePort")
     screen.setMessagePort(m.port)
