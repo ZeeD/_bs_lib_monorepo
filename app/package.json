@@ -8,7 +8,7 @@
     },
     "scripts": {
         "clean": "rm -rf out dist",
-        "prepack": "npm run clean && bsc --retainStagingFolder --create-package false"
+        "start": "npm run clean && bsc --deploy"
     },
     "keywords": [
         "ropm"
