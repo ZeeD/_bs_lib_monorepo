@@ -1,0 +1,14 @@
+interface Input
+    a as string
+    b as integer
+end interface
+
+class LowLib
+    a as string
+    b as integer
+
+    sub new(input as Input)
+        m.a = input.a
+        m.b = input.b
+    end sub
+end class

@@ -1,5 +1,9 @@
 {
     "name": "hilib",
     "version": "1.0.0",
-    "license": "UNLICENSED"
+    "license": "UNLICENSED",
+    "devDependencies": {
+        "brighterscript": "^0.56.0",
+        "ropm": "^0.10.8"
+    }
 }
