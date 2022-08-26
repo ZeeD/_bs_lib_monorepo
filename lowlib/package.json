@@ -18,6 +18,10 @@
         "!**/roku_modules"
     ],
     "ropm": {
+        "rootDir": "src",
         "packageRootDir": "dist"
+    },
+    "dependencies": {
+        "bslib": "npm:@rokucommunity/bslib@^0.1.1"
     }
 }

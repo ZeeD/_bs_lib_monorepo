@@ -22,6 +22,7 @@
         "packageRootDir": "dist"
     },
     "dependencies": {
+        "bslib": "npm:@rokucommunity/bslib@^0.1.1",
         "lowlib": "file:../lowlib/lowlib-1.0.0.tgz"
     }
 }

@@ -1,9 +1,29 @@
 {
     "name": "app",
     "version": "1.0.0",
-    "license": "UNLICENSED",
+    "license": "MIT",
     "devDependencies": {
         "brighterscript": "^0.56.0",
         "ropm": "^0.10.8"
+    },
+    "scripts": {
+        "clean": "rm -rf out dist",
+        "prepack": "npm run clean && bsc --retainStagingFolder --create-package false"
+    },
+    "keywords": [
+        "ropm"
+    ],
+    "files": [
+        "dist",
+        "!**/roku_modules"
+    ],
+    "ropm": {
+        "rootDir": "src",
+        "packageRootDir": "dist"
+    },
+    "dependencies": {
+        "bslib": "npm:@rokucommunity/bslib@^0.1.1",
+        "hilib": "file:../hilib/hilib-1.0.0.tgz",
+        "lowlib": "file:../lowlib/lowlib-1.0.0.tgz"
     }
 }
