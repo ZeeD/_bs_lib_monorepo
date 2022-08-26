@@ -11,4 +11,8 @@ class LowLib
         m.a = input.a
         m.b = input.b
     end sub
+
+    function doit() as string
+        return `${m.a} + ${m.b}`
+    end function
 end class

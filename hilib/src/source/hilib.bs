@@ -1,0 +1,3 @@
+class HiLib
+    ' here I want a LowLib object and will do something with it
+end class
