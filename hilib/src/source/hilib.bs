@@ -1,3 +1,13 @@
+import "pkg:/source/roku_modules/lowlib/lowlib.brs"
+
 class HiLib
-    ' here I want a LowLib object and will do something with it
+    lowLib_ as lowlib.LowLib
+
+    sub new(lowLib_ as lowlib.LowLib)
+        m.lowLib_ = lowLib_
+    end sub
+
+    function doThat() as String
+        return m.lowLib_.doit() + "ciao"
+    end function
 end class

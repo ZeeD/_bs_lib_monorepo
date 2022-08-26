@@ -18,6 +18,7 @@
         "!**/roku_modules"
     ],
     "ropm": {
+        "rootDir": "src",
         "packageRootDir": "dist"
     },
     "dependencies": {
